@@ -1,24 +1,14 @@
 {
-  "name": "Hello Extensions",
-  "description" : "Base Level Extension",
+  "name": "Qulinks",
+  "description" : "Qulinks URL shortener",
   "version": "1.0",
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["qulinks_url.js", "background.js"]
   },
   "omnibox": { "keyword" : "qu" },
   "browser_action": {
-    "default_popup": "hello.html",
-    "default_icon": "hello_extensions.png"
+    "default_icon": "qu.png"
   },
   "permissions": ["tabs"],
-  "manifest_version": 2,
-  "commands": {
-    "_execute_browser_action": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+F",
-        "mac": "MacCtrl+Shift+F"
-      },
-      "description": "Opens hello.html"
-    }
-  }
+  "manifest_version": 2
 }
